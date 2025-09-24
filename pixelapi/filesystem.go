@@ -37,7 +37,7 @@ type FilesystemNode struct {
 	// Meta params
 	ID                  string                 `json:"id,omitempty"`
 	Properties          map[string]string      `json:"properties,omitempty"`
-	LoggingEnabledAt    time.Time              `json:"logging_enabled_at"`
+	LoggingEnabledAt    *time.Time             `json:"logging_enabled_at,omitempty"`
 	LinkPermissions     *Permissions           `json:"link_permissions,omitempty"`
 	UserPermissions     map[string]Permissions `json:"user_permissions,omitempty"`
 	PasswordPermissions map[string]Permissions `json:"password_permissions,omitempty"`

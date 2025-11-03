@@ -37,7 +37,8 @@ type FileInfo struct {
 	AbuseReporterName   string `json:"abuse_reporter_name"`
 
 	// Personalization
-	Branding map[string]string `json:"branding,omitempty"`
+	Branding     map[string]string `json:"branding,omitempty"`
+	EmbedDomains []string          `json:"embed_domains,omitempty"`
 
 	// Based on user permissions
 	CanEdit            bool `json:"can_edit"`
